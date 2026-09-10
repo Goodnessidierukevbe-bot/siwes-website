@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap: 10px;
+}
+div{
+    background-color: rgb(42, 237, 123);
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    border-radius: 16px;
+    border: 5px solid black ;
+    font-size: 50px;
+    display: flex;
+}

@@ -1,0 +1,105 @@
+html body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: 1.5rem;
+    min-height: 100vh;
+}
+.navbar{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.logo{
+    display: flex;
+    margin-left: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    gap: 8px;
+    align-items: center;
+}   
+.logo-img{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 60px;
+    width: auto;
+}
+.red{
+    color: red;
+}
+.h-logo{
+    margin-bottom: 0px;
+}
+.p-logo{
+    color: grey;
+    margin: 0px;
+    padding: 0px;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 470;
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    align-items: center;
+    margin-right: 190px;   
+}
+.nav-link:hover{
+    background-color: rgb(255, 44, 7);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+.order-button{
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: small;
+    border-radius: 12px;
+    font-weight: 500;
+}
+.order-button:hover{
+    box-shadow: 0px 2px 8px red;
+
+}
+.hero-container{
+    background-color: rgb(253, 234, 210);
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.c-text{
+    padding:0px;
+    margin: 0px;
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1900%;
+    top: auto;
+    left: 40%;
+    right: 50%;
+    color: rgb(230, 209, 184);
+}
+.glass-container{
+    height: 300px;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgba(145, 143, 143, 0.653);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    backdrop-filter: blur(100px);
+    border-top: 1px solid rgba(114, 103, 103, 0.653);
+}
+
+
+
+

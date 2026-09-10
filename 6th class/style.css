@@ -1,0 +1,26 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+.flag{
+    display: flex;
+    height: 200px;
+    width: 250px;
+    border: 1px solid;
+    
+}
+.one{
+    background-color: green;
+}
+.two{
+    background-color: white;
+}
+/* .flags{
+    height: 50px;
+    width: 300px;
+    border: 1px solid black;
+}
+.three{
+    background-color: skyblue;
+} */

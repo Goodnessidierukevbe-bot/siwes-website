@@ -1,0 +1,60 @@
+.user{
+    display: flex;
+    margin: 0 auto;
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    position: relative;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    background-color: red;
+    height: 34px;
+    width: 35px;
+    position: absolute;
+    border-radius: 100%;
+    top: 12px;
+    right: 0px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.chat{
+    display: flex;
+    color: white;
+    background-color: rgb(2, 146, 2);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.box1 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+}
+.box2 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 60px;
+}

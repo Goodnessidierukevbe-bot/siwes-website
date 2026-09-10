@@ -1,0 +1,96 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+    background-color: rgb(36, 84, 127);
+} 
+header{
+    display: flex;
+    background-color: rgb(7, 36, 62);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+
+}
+nav a{
+    color: aliceblue;
+    margin-left: 20px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: var(#22c55e)
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 60px;
+}
+.hero-text{
+    font-size: 50px;
+}
+.hero-text p{
+    color:aliceblue;
+    margin-top: 10px;
+    max-width: 400px;
+}
+.hero img{
+    width: 220px;
+    height: 220px;
+    
+}
+.btn{
+    text-decoration: none;
+    height: 50px;
+    border: 2px solid black;
+    color: white;
+    background-color: rgb(114, 180, 237);
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.about{
+    padding: 10px;
+    margin: 50px;
+    background-color: rgb(49, 111, 166);
+    width: 90%;
+    backdrop-filter: blur(10px);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.project{
+    display: flex;
+
+}
+.card{
+    background-color: rgb(49, 111, 166);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 12px;
+}
+h2{
+    color: aliceblue;
+
+}
+p{
+    color: aliceblue;
+}

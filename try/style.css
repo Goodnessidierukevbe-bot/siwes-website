@@ -1,0 +1,23 @@
+html,body{
+    display: flex;
+    justify-content: center;
+    background-color: #c6d6ff;
+
+}
+card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+card{
+    padding: 16px;
+    border: 1px solid #cbd5ef;
+    border-radius: 12px;
+}
+card-img{
+    width: 100%; 
+    border-radius: 8px;
+}
+image{
+    size: 40px;
+}

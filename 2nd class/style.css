@@ -1,0 +1,21 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+ul{
+    display: flex;
+    gap: 10px;
+}
+li{
+    list-style: none;
+    color: aliceblue;
+}
+a{
+    color: rgb(19, 19, 19);
+    
+}
