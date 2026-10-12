@@ -1,331 +1,693 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Marketplace</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <a href="index.html"><h2 class="logo">StudentMarket</h2></a>
-        <input type="search" placeholder="      search products, categories..." class="search">
-            <ul class="nav-links">
-                <a href="f" class="anchor"><img src="liked.png" alt="" class="icon"></a>
-                <a href="d" class="anchor"><img src="cart.png" alt="" class="icon"></a>
-                <a href="d" class="anchor"><img src="home.png" alt="" class="icon"></a>
-            </ul>
+      <a href="index.html"><h2 class="logo">StudentMarket</h2></a>
+      <input
+        type="search"
+        placeholder="      search products, categories..."
+        class="search"
+      />
+      <ul class="nav-links">
+        <a href="f" class="anchor"
+          ><img src="liked.png" alt="" class="icon"
+        /></a>
+        <a href="d" class="anchor"
+          ><img src="cart.png" alt="" class="icon"
+        /></a>
+        <a href="d" class="anchor"
+          ><img src="home.png" alt="" class="icon"
+        /></a>
+      </ul>
     </nav>
+
     <section class="hero-container">
-        <div class="hetext">
-                <h1 class="head-text">Your Student
-                    <br><span class="mark">Marketplace</span>
-                </h1>    
-            <p class="phead">Buy and sell everything you need for campus life from textbooks <br> to electronics, fashion and services.</p>  
-            <button class="start">Start Shopping</button>
+      <div class="hetext">
+        <h1 class="head-text">
+          Your Student <br /><span class="mark">Marketplace</span>
+        </h1>
+        <p class="phead">
+          Buy and sell everything you need for campus life from textbooks <br />
+          to electronics, fashion and services.
+        </p>
+        <button class="start">Start Shopping</button>
+      </div>
+      <div class="carddiv">
+        <div class="card">
+          <img src="shoppingcart.png" alt="" class="icons" />
+          <h2 class="hero-head">1000+</h2>
+          <p class="hp">Active Listings</p>
         </div>
-        <div class="carddiv">
-            <div class="card">
-                <img src="shoppingcart.png" alt="" class="icons">
-                <h2 class="hero-head">1000+</h2>
-                <p class="hp">Active Listings</p>
-            </div>
-            <div class="card">
-                <img src="user.png" alt="" class="icons">
-                <h2 class="hero-head">5000+</h2>
-                <P class="hp">Students</P>
-            </div>
-            <div class="card wide">
-                <img src="arrow.png" alt="" class="icons">
-                <h2 class="hero-head">Safe & Secure</h2>
-                <p class="hp">Campus-verified sellers and buyers</p>
-            </div>
+        <div class="card">
+          <img src="user.png" alt="" class="icons" />
+          <h2 class="hero-head">5000+</h2>
+          <p class="hp">Students</p>
         </div>
+        <div class="card wide">
+          <img src="arrow.png" alt="" class="icons" />
+          <h2 class="hero-head">Safe & Secure</h2>
+          <p class="hp">Campus-verified sellers and buyers</p>
+        </div>
+      </div>
     </section>
 
-    <!-- categories -->
     <section class="categories">
-        <div class="wrap">
-            <div class="section-head">
-                <h2 class="section-text">Shop by Categories</h2>
-                <a href="view" class="section-link">View all categories</a>
-            </div>
-            <div class="categories-cards">
-                <div class="c-card">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                    <span class="card-text">Textbooks</span>
-                </div>
-                <div class="c-card">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="4" y="4" width="16" height="12" rx="2"/><path d="M2 20h20"/></svg>
-                    <span class="card-text">Electronics</span>
-                </div>
-                <div class="c-card">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20.4 8.5 16 4l-4 2-4-2-4.4 4.5L6 12v9h12v-9z"/></svg>
-                    <span class="card-text">Fashion</span>
-                </div>
-                <div class="c-card">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M3 9h18v11H3z"/><path d="M3 9V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3"/><path d="M8 13h8"/></svg>
-                    <span class="card-text">Furniture</span>
-                </div>
-                <div class="c-card">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a15 15 0 0 1 0 18M3 12h18"/></svg>
-                    <span class="card-text">Sports</span>
-                </div>
-                <div class="c-card">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
-                    <span class="card-text">Stationery</span>
-                </div>                
-            </div>
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-text">Shop by Categories</h2>
+          <a href="view" class="section-link">View all categories</a>
         </div>
+        <div class="categories-cards">
+          <div class="c-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path
+                d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+              />
+            </svg>
+            <span class="card-text">Textbooks</span>
+          </div>
+          <div class="c-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <rect x="4" y="4" width="16" height="12" rx="2" />
+              <path d="M2 20h20" />
+            </svg>
+            <span class="card-text">Electronics</span>
+          </div>
+          <div class="c-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <path d="M20.4 8.5 16 4l-4 2-4-2-4.4 4.5L6 12v9h12v-9z" />
+            </svg>
+            <span class="card-text">Fashion</span>
+          </div>
+          <div class="c-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <path d="M3 9h18v11H3z" />
+              <path d="M3 9V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3" />
+              <path d="M8 13h8" />
+            </svg>
+            <span class="card-text">Furniture</span>
+          </div>
+          <div class="c-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 3a15 15 0 0 1 0 18M3 12h18" />
+            </svg>
+            <span class="card-text">Sports</span>
+          </div>
+          <div class="c-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <path d="M12 20h9" />
+              <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />
+            </svg>
+            <span class="card-text">Stationery</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="products">
-        <div class="wrap">
-            <div class="section-head">
-                <h2 class="section-text">Trending on Campus</h2>
-                <a href="view" class="section-link">View all products</a>
-            </div>
-            <div class="filter-btn">
-                <button class="filter active">All</button>
-                <button class="filter">Textbooks</button>
-                <button class="filter">Electronics</button>
-                <button class="filter">Fashion</button>
-                <button class="filter">Furniture</button>
-            </div>
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-thumb" style="background: rgb(248, 226, 226);">
-                        <span class="product-tag">-20%</span>
-                        <button class="wishlist-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                    </div>
-                    <div class="product-body">
-                        <span class="product-cat">Textbooks</span>
-                        <div class="product-name">Calculus: Early Transcendentals, 9th Edition</div>
-                        <div class="product-meta"><span class="stars">⭐⭐⭐⭐⭐</span>(32)</div>
-                        <div class="product-bottom">
-                            <div><span class="price-now">N8,500</span><span class="price-old">N12,000</span></div>
-                            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-thumb" style="background: rgba(128, 0, 128, 0.199);">
-                        <!-- <span class="product-tag"></span> -->
-                        <button class="wishlist-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                    </div>
-                    <div class="product-body">
-                        <span class="product-cat">Electronics</span>
-                        <div class="product-name">Wireless Noise Canceling Headphones</div>
-                        <div class="product-meta"><span class="stars">⭐⭐⭐⭐⭐</span>(58)</div>
-                        <div class="product-bottom">
-                            <div><span class="price-now">N24,000</span><span class="price-old"></span></div>
-                            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-thumb" style="background: rgba(134, 191, 248, 0.502);">
-                        <span class="product-tag">New</span>
-                        <button class="wishlist-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                    </div>
-                    <div class="product-body">
-                        <span class="product-cat">Fashion</span>
-                        <div class="product-name">Campus Hoodie - Unisex, Charcoal</div>
-                        <div class="product-meta"><span class="stars">⭐⭐⭐⭐⭐</span>(14)</div>
-                        <div class="product-bottom">
-                            <div><span class="price-now">N9,200</span><span class="price-old">N15,000</span></div>
-                            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-thumb" style="background: rgba(96, 248, 172, 0.363);">
-                        <!-- <span class="product-tag">-20%</span> -->
-                        <button class="wishlist-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                    </div>
-                    <div class="product-body">
-                        <span class="product-cat">Furniture</span>
-                        <div class="product-name">Foldable Study Desk, Compact</div>
-                        <div class="product-meta"><span class="stars">⭐⭐⭐⭐⭐</span>(9)</div>
-                        <div class="product-bottom">
-                            <div><span class="price-now">N15,000</span><span class="price-old"></span></div>
-                            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-thumb" style="background: rgba(243, 85, 85, 0.39);">
-                        <!-- <span class="product-tag">-20%</span> -->
-                        <button class="wishlist-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                    </div>
-                    <div class="product-body">
-                        <span class="product-cat">Textbooks</span>
-                        <div class="product-name">Organic Chemistry, 3rd Edition</div>
-                        <div class="product-meta"><span class="stars">⭐⭐⭐⭐⭐</span>(16)</div>
-                        <div class="product-bottom">
-                            <div><span class="price-now">N5,000</span><span class="price-old"></span></div>
-                            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-thumb" style="background: rgba(89, 211, 233, 0.331);">
-                        <span class="product-tag">-15%</span>
-                        <button class="wishlist-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                    </div>
-                    <div class="product-body">
-                        <span class="product-cat">Electronics</span>
-                        <div class="product-name">Portable Bluetooth Speakers</div>
-                        <div class="product-meta"><span class="stars">⭐⭐⭐⭐⭐</span>(14)</div>
-                        <div class="product-bottom">
-                            <div><span class="price-now">N11,900</span><span class="price-old">N14,000</span></div>
-                            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-thumb" style="background: rgba(245, 245, 60, 0.386);">
-                        <!-- <span class="product-tag">-20%</span> -->
-                        <button class="wishlist-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                    </div>
-                    <div class="product-body">
-                        <span class="product-cat">Fashion</span>
-                        <div class="product-name">Denim Jacket, Vintage-wash</div>
-                        <div class="product-meta"><span class="stars">⭐⭐⭐⭐⭐</span>(9)</div>
-                        <div class="product-bottom">
-                            <div><span class="price-now">N13,500</span><span class="price-old"></span></div>
-                            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-thumb" style="background: rgba(96, 216, 246, 0.511);">
-                        <!-- <span class="product-tag">-20%</span> -->
-                        <button class="wishlist-dot"><svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                    </div>
-                    <div class="product-body">
-                        <span class="product-cat">Sports</span>
-                        <div class="product-name">5 Piece Resistance Band Set</div>
-                        <div class="product-meta"><span class="stars">⭐⭐⭐⭐⭐</span>(12)</div>
-                        <div class="product-bottom">
-                            <div><span class="price-now">N5,400</span><span class="price-old"></span></div>
-                            <button class="add-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="load-more-wrap">
-                <button class="load-more-btn">Load more listings</button>
-            </div>
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-text">Trending on Campus</h2>
+          <a href="view" class="section-link">View all products</a>
         </div>
+        <div class="filter-btn">
+          <button class="filter active">All</button>
+          <button class="filter">Textbooks</button>
+          <button class="filter">Electronics</button>
+          <button class="filter">Fashion</button>
+          <button class="filter">Furniture</button>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-thumb" style="background: rgb(248, 226, 226)">
+              <span class="product-tag">-20%</span>
+              <button class="wishlist-dot">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1a1a1a"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                  />
+                </svg>
+              </button>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1a1a1a"
+                stroke-width="1.5"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                />
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Textbooks</span>
+              <div class="product-name">
+                Calculus: Early Transcendentals, 9th Edition
+              </div>
+              <div class="product-meta">
+                <span class="stars">⭐⭐⭐⭐⭐</span>(32)
+              </div>
+              <div class="product-bottom">
+                <div>
+                  <span class="price-now">N8,500</span
+                  ><span class="price-old">N12,000</span>
+                </div>
+                <button class="add-btn">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                  >
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div
+              class="product-thumb"
+              style="background: rgba(128, 0, 128, 0.199)"
+            >
+              <!-- <span class="product-tag"></span> -->
+              <button class="wishlist-dot">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1a1a1a"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                  />
+                </svg>
+              </button>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1a1a1a"
+                stroke-width="1.5"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                />
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Electronics</span>
+              <div class="product-name">
+                Wireless Noise Canceling Headphones
+              </div>
+              <div class="product-meta">
+                <span class="stars">⭐⭐⭐⭐⭐</span>(58)
+              </div>
+              <div class="product-bottom">
+                <div>
+                  <span class="price-now">N24,000</span
+                  ><span class="price-old"></span>
+                </div>
+                <button class="add-btn">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                  >
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div
+              class="product-thumb"
+              style="background: rgba(134, 191, 248, 0.502)"
+            >
+              <span class="product-tag">New</span>
+              <button class="wishlist-dot">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1a1a1a"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                  />
+                </svg>
+              </button>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1a1a1a"
+                stroke-width="1.5"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                />
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Fashion</span>
+              <div class="product-name">Campus Hoodie - Unisex, Charcoal</div>
+              <div class="product-meta">
+                <span class="stars">⭐⭐⭐⭐⭐</span>(14)
+              </div>
+              <div class="product-bottom">
+                <div>
+                  <span class="price-now">N9,200</span
+                  ><span class="price-old">N15,000</span>
+                </div>
+                <button class="add-btn">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                  >
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div
+              class="product-thumb"
+              style="background: rgba(96, 248, 172, 0.363)"
+            >
+              <!-- <span class="product-tag">-20%</span> -->
+              <button class="wishlist-dot">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1a1a1a"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                  />
+                </svg>
+              </button>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1a1a1a"
+                stroke-width="1.5"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                />
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Furniture</span>
+              <div class="product-name">Foldable Study Desk, Compact</div>
+              <div class="product-meta">
+                <span class="stars">⭐⭐⭐⭐⭐</span>(9)
+              </div>
+              <div class="product-bottom">
+                <div>
+                  <span class="price-now">N15,000</span
+                  ><span class="price-old"></span>
+                </div>
+                <button class="add-btn">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                  >
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div
+              class="product-thumb"
+              style="background: rgba(243, 85, 85, 0.39)"
+            >
+              <!-- <span class="product-tag">-20%</span> -->
+              <button class="wishlist-dot">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1a1a1a"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                  />
+                </svg>
+              </button>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1a1a1a"
+                stroke-width="1.5"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                />
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Textbooks</span>
+              <div class="product-name">Organic Chemistry, 3rd Edition</div>
+              <div class="product-meta">
+                <span class="stars">⭐⭐⭐⭐⭐</span>(16)
+              </div>
+              <div class="product-bottom">
+                <div>
+                  <span class="price-now">N5,000</span
+                  ><span class="price-old"></span>
+                </div>
+                <button class="add-btn">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                  >
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div
+              class="product-thumb"
+              style="background: rgba(89, 211, 233, 0.331)"
+            >
+              <span class="product-tag">-15%</span>
+              <button class="wishlist-dot">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1a1a1a"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                  />
+                </svg>
+              </button>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1a1a1a"
+                stroke-width="1.5"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                />
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Electronics</span>
+              <div class="product-name">Portable Bluetooth Speakers</div>
+              <div class="product-meta">
+                <span class="stars">⭐⭐⭐⭐⭐</span>(14)
+              </div>
+              <div class="product-bottom">
+                <div>
+                  <span class="price-now">N11,900</span
+                  ><span class="price-old">N14,000</span>
+                </div>
+                <button class="add-btn">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                  >
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div
+              class="product-thumb"
+              style="background: rgba(245, 245, 60, 0.386)"
+            >
+              <!-- <span class="product-tag">-20%</span> -->
+              <button class="wishlist-dot">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1a1a1a"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                  />
+                </svg>
+              </button>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1a1a1a"
+                stroke-width="1.5"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                />
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Fashion</span>
+              <div class="product-name">Denim Jacket, Vintage-wash</div>
+              <div class="product-meta">
+                <span class="stars">⭐⭐⭐⭐⭐</span>(9)
+              </div>
+              <div class="product-bottom">
+                <div>
+                  <span class="price-now">N13,500</span
+                  ><span class="price-old"></span>
+                </div>
+                <button class="add-btn">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                  >
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div
+              class="product-thumb"
+              style="background: rgba(96, 216, 246, 0.511)"
+            >
+              <!-- <span class="product-tag">-20%</span> -->
+              <button class="wishlist-dot">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1a1a1a"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                  />
+                </svg>
+              </button>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1a1a1a"
+                stroke-width="1.5"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                />
+              </svg>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">Sports</span>
+              <div class="product-name">5 Piece Resistance Band Set</div>
+              <div class="product-meta">
+                <span class="stars">⭐⭐⭐⭐⭐</span>(12)
+              </div>
+              <div class="product-bottom">
+                <div>
+                  <span class="price-now">N5,400</span
+                  ><span class="price-old"></span>
+                </div>
+                <button class="add-btn">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                  >
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="load-more-wrap">
+          <button class="load-more-btn">Load more listings</button>
+        </div>
+      </div>
     </section>
 
     <section class="section">
-        <div class="wrap">
-            <div class="promo">
-                <div class="promo-text">
-                    <h3>Got Stuff You No Longer Need</h3>
-                    <p>List it in minutes and reach thousands of verified students on your
-                       <br> campus. No listing fees for your first 5 items.</p>
-                </div>
-                <button class="promo-btn">Start Selling - Its free</button>
-            </div>
+      <div class="wrap">
+        <div class="promo">
+          <div class="promo-text">
+            <h3>Got Stuff You No Longer Need</h3>
+            <p>
+              List it in minutes and reach thousands of verified students on
+              your <br />
+              campus. No listing fees for your first 5 items.
+            </p>
+          </div>
+          <button class="promo-btn">Start Selling - Its free</button>
         </div>
+      </div>
     </section>
 
     <section class="howitworks">
-            <div class="wrap">
-                <div class="how-head">
-                    <h2 class="section-text">How StudentMarketplace Works</h2>
-                </div>
-                <div class="how-cards">
-                    <div class="how-card">
-                        <div class="number"><p>1</p></div>
-                        <h4>Verify your campus</h4>
-                        <p>sign up with your school email so buyers and sellers know you're a real student.</p>
-                    </div>
-                    <div class="how-card">
-                        <div class="number"><p>2</p></div>
-                        <h4>Browse or list</h4>
-                        <p>Search by category or post what you're selling with photos and a price.</p>
-                    </div>
-                    <div class="how-card">
-                        <div class="number"><p>3</p></div>
-                        <h4>Message and meet</h4>
-                        <p>Chat directly, agree on a time, and meet safely on campus to exchange.</p>
-                    </div>
-                    <div class="how-card">
-                        <div class="number"><p>4</p></div>
-                        <h4>Rate the trade</h4>
-                        <p>Leave a rating after the deal to help keep the community trustworthy.</p>
-                    </div>
-                </div>
-            </div>
-    </section>
-    
-    <section class="newsletter">
-        <div class="newsletetter-container">
-            <div class="wrap">
-                <div class="newsletter-body">
-                    <div class="newsletter-text">
-                        <h2 class="section-text">Never miss a good deal</h2>
-                        <p>Get the best new listings on your campus dropped straight into your inbox, weekly.</p>
-                    </div>
-                    <form class="subscribe">
-                        <input type="email" placeholder="you@university.edu" class="email">
-                        <button class="subscribe-btn">Subscribe</button>
-                    </form>
-                </div>
-            </div>
+      <div class="wrap">
+        <div class="how-head">
+          <h2 class="section-text">How StudentMarketplace Works</h2>
         </div>
+        <div class="how-cards">
+          <div class="how-card">
+            <div class="number"><p>1</p></div>
+            <h4>Verify your campus</h4>
+            <p>
+              sign up with your school email so buyers and sellers know you're a
+              real student.
+            </p>
+          </div>
+          <div class="how-card">
+            <div class="number"><p>2</p></div>
+            <h4>Browse or list</h4>
+            <p>
+              Search by category or post what you're selling with photos and a
+              price.
+            </p>
+          </div>
+          <div class="how-card">
+            <div class="number"><p>3</p></div>
+            <h4>Message and meet</h4>
+            <p>
+              Chat directly, agree on a time, and meet safely on campus to
+              exchange.
+            </p>
+          </div>
+          <div class="how-card">
+            <div class="number"><p>4</p></div>
+            <h4>Rate the trade</h4>
+            <p>
+              Leave a rating after the deal to help keep the community
+              trustworthy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletetter-container">
+        <div class="wrap">
+          <div class="newsletter-body">
+            <div class="newsletter-text">
+              <h2 class="section-text">Never miss a good deal</h2>
+              <p>
+                Get the best new listings on your campus dropped straight into
+                your inbox, weekly.
+              </p>
+            </div>
+            <form class="subscribe">
+              <input
+                type="email"
+                placeholder="you@university.edu"
+                class="email"
+              />
+              <button class="subscribe-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="wrap">
-            <div class="footer-container">
-                <div class="footer-text">
-                    <h2>StudentMarketplace</h2>
-                    <p>The campus marketplace for buying and selling textbooks, electronics, fashion and services — verified student to verified student.</p>
-                </div>
-                <div class="footer-card">
-                    <ul class="footer-links">
-                        <a href="d" id="f-head">Shop</a>
-                        <a href="">Textbooks</a>
-                        <a href="">Electronics</a>
-                        <a href="">Fashion</a>
-                        <a href="">Furniture</a>
-                        <a href="">Services</a>
-                    </ul>
-                </div>
-                <div class="footer-card">
-                    <ul class="footer-links">
-                        <a href="d" id="f-head">Support</a>
-                        <a href="">Help center</a>
-                        <a href="">Campus partners</a>
-                        <a href="">Terms of service</a>
-                        <a href="">Privacy policies</a>
-                    </ul>
-                </div>
-                <div class="footer-card">
-                    <ul class="footer-links">
-                        <a href="d" id="f-head">Contact</a>
-                        <a href="">Support@studentmarket.com</a>
-                        <a href="">+2348111479753</a>
-                        <a href="">Delta state, Nigeria</a>
-                        
-                    </ul>
-                </div>
-            </div>
+      <div class="wrap">
+        <div class="footer-container">
+          <div class="footer-text">
+            <h2>StudentMarketplace</h2>
+            <p>
+              The campus marketplace for buying and selling textbooks,
+              electronics, fashion and services — verified student to verified
+              student.
+            </p>
+          </div>
+          <div class="footer-card">
+            <ul class="footer-links">
+              <a href="d" id="f-head">Shop</a>
+              <a href="">Textbooks</a>
+              <a href="">Electronics</a>
+              <a href="">Fashion</a>
+              <a href="">Furniture</a>
+              <a href="">Services</a>
+            </ul>
+          </div>
+          <div class="footer-card">
+            <ul class="footer-links">
+              <a href="d" id="f-head">Support</a>
+              <a href="">Help center</a>
+              <a href="">Campus partners</a>
+              <a href="">Terms of service</a>
+              <a href="">Privacy policies</a>
+            </ul>
+          </div>
+          <div class="footer-card">
+            <ul class="footer-links">
+              <a href="d" id="f-head">Contact</a>
+              <a href="">Support@studentmarket.com</a>
+              <a href="">+2348111479753</a>
+              <a href="">Delta state, Nigeria</a>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-</html> 
+  </body>
+</html>
